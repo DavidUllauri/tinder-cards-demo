@@ -15,6 +15,7 @@
 }
 
 .deck > div {
+  display: flex;
   touch-action: none;
   background-color: white;
   background-size: auto 85%;
@@ -26,5 +27,11 @@
   max-height: 570px;
   will-change: transform;
   border-radius: 10px;
+}
+
+img {
+  margin: auto;
+  padding: 12px;
+  width: 100%;
 }
   

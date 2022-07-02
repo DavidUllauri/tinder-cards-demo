@@ -63,9 +63,10 @@ function Deck() {
             {...bind(i)}
             style={{
               transform: interpolate([rot, scale], (r, s) => `rotate(${r}deg) scale(${s})`),
-              backgroundImage: `url(${cards[i]})`,
             }}
-          />
+          >
+            <img src={cards[i]} alt="Torrot" draggable="false" />
+          </animated.div>
         </animated.div>
       ))}
     </>
